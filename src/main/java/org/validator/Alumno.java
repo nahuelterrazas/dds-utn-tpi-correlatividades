@@ -12,8 +12,4 @@ public class Alumno {
   public List<Materia> getAprobadas() {
     return aprobadas;
   }
-
-  public void aprobar(Materia materia) {
-    aprobadas.add(materia);
-  }
 }

@@ -1,23 +1,23 @@
 @startuml
 
-Alumno --> Materia
-Inscripcion o-- Materia
+Alumno --> "0..*"Materia
+Inscripcion o--"*" Materia
 Inscripcion o-- Alumno
+Materia --> "0..*"Materia
 
 class Inscripcion {
 - alumno: Alumno
-- asignaturas: [Materia]
-esExitosa() -> Bool
+- asignaturas: List<Materia>
++ esExitosa(): boolean
 }
 
 class Materia {
-- correlativas: [Materia]
-puedeCursar() -> Bool
+- correlativas: List<Materia>
++ puedeCursar(correlativas: List<Materia>): boolean
 }
 
 class Alumno {
-- aprobadas: [Materia]
-aprobar()
+- aprobadas: List<Materia>
 }
 
 @enduml

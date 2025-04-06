@@ -11,7 +11,7 @@ public class Inscripcion {
     this.alumno = alumno;
   }
 
-  public boolean esExitosa(List<Materia> aprobadas) {
+  public boolean esExitosa() {
     return asignaturas.stream().allMatch(materia -> materia.puedeCursar(alumno));
   }
 
