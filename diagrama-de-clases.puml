@@ -13,7 +13,7 @@ class Inscripcion {
 
 class Materia {
 - correlativas: List<Materia>
-+ puedeCursar(correlativas: List<Materia>): boolean
++ puedeCursar(alumno: Alumno): boolean
 }
 
 class Alumno {
