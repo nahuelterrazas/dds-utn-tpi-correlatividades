@@ -1,2 +1,4 @@
-# dds-utn-tpi-correlatividades
-Ejercicio Validador de Correlatividades en el marco de la cursada de Diseño de Sistemas de la UTN
+# Ejercicio Validador de Correlatividades
+
+Diagrama de Clases
+![image alt](https://github.com/nahuelterrazas/dds-utn-tpi-correlatividades/blob/main/diagrama-de-clases.png)
