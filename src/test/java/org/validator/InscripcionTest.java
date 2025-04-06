@@ -21,7 +21,7 @@ public class InscripcionTest {
     Alumno santiago = new Alumno(List.of(syo, md, fisica));
 
     Inscripcion inscripcion = new Inscripcion(santiago, List.of(ddsi, fisica2, quimica));
-    assertFalse(inscripcion.esExitosa());
+    assertFalse(inscripcion.aprobada());
   }
 
   @Test
@@ -29,7 +29,7 @@ public class InscripcionTest {
     Alumno nahuel = new Alumno(List.of(syo, pdp, md, fisica));
 
     Inscripcion inscripcion = new Inscripcion(nahuel, List.of(quimica, ddsi, fisica2));
-    assertTrue(inscripcion.esExitosa());
+    assertTrue(inscripcion.aprobada());
   }
 
 }

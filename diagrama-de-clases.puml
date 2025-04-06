@@ -8,7 +8,7 @@ Materia --> "0..*"Materia
 class Inscripcion {
 - alumno: Alumno
 - asignaturas: List<Materia>
-+ esExitosa(): boolean
++ aprobada(): boolean
 }
 
 class Materia {
